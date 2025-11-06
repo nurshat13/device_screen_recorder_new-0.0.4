@@ -1,6 +1,10 @@
+library device_screen_recorder_new;
+
 import 'dart:async';
 
-import 'package:device_screen_recorder_new/recorder.dart';
+import 'recorder.dart';
+
+export 'recorder.dart';
 
 class DeviceScreenRecorder {
   static Recorder _client = Recorder();

@@ -1,6 +1,6 @@
-# device_screen_recorder_example
+# device_screen_recorder_new_example
 
-Demonstrates how to use the device_screen_recorder plugin.
+Demonstrates how to use the device_screen_recorder_new plugin.
 
 ## Getting Started
 

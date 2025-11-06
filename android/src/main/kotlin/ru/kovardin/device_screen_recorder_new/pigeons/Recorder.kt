@@ -56,7 +56,7 @@ interface Recorder {
     @Suppress("UNCHECKED_CAST")
     fun setUp(binaryMessenger: BinaryMessenger, api: Recorder?) {
       run {
-        val channel = BasicMessageChannel<Any?>(binaryMessenger, "dev.flutter.pigeon.device_screen_recorder.Recorder.start", codec)
+        val channel = BasicMessageChannel<Any?>(binaryMessenger, "dev.flutter.pigeon.device_screen_recorder_new.Recorder.start", codec)
         if (api != null) {
           channel.setMessageHandler { message, reply ->
             val args = message as List<Any?>
@@ -77,7 +77,7 @@ interface Recorder {
         }
       }
       run {
-        val channel = BasicMessageChannel<Any?>(binaryMessenger, "dev.flutter.pigeon.device_screen_recorder.Recorder.stop", codec)
+        val channel = BasicMessageChannel<Any?>(binaryMessenger, "dev.flutter.pigeon.device_screen_recorder_new.Recorder.stop", codec)
         if (api != null) {
           channel.setMessageHandler { _, reply ->
             api.stop() { result: Result<String> ->

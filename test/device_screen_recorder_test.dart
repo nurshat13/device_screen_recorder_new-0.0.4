@@ -1,9 +1,9 @@
-import 'package:device_screen_recorder/device_screen_recorder.dart';
+import 'package:device_screen_recorder_new/device_screen_recorder.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('device_screen_recorder');
+  const MethodChannel channel = MethodChannel('device_screen_recorder_new');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 

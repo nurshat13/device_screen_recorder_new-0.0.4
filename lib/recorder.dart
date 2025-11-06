@@ -20,7 +20,7 @@ class Recorder {
 
   Future<bool> start(String arg_name, bool arg_recordAudio) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.device_screen_recorder.Recorder.start', codec,
+        'dev.flutter.pigeon.device_screen_recorder_new.Recorder.start', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_name, arg_recordAudio]) as List<Object?>?;
@@ -47,7 +47,7 @@ class Recorder {
 
   Future<String> stop() async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.device_screen_recorder.Recorder.stop', codec,
+        'dev.flutter.pigeon.device_screen_recorder_new.Recorder.stop', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(null) as List<Object?>?;

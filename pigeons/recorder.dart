@@ -3,9 +3,9 @@ import 'package:pigeon/pigeon.dart';
 @ConfigurePigeon(PigeonOptions(
   dartOut: 'lib/recorder.dart',
   dartOptions: DartOptions(),
-  kotlinOut: 'android/src/main/kotlin/ru/kovardin/device_screen_recorder/pigeons/Recorder.kt',
+  kotlinOut: 'android/src/main/kotlin/ru/kovardin/device_screen_recorder_new/pigeons/Recorder.kt',
   kotlinOptions: KotlinOptions(),
-  dartPackageName: 'device_screen_recorder',
+  dartPackageName: 'device_screen_recorder_new',
 ))
 @HostApi()
 abstract class Recorder {

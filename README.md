@@ -1,4 +1,5 @@
-# device_screen_recorder
+````markdown
+# device_screen_recorder_new
 
 Version: 0.0.4
 
@@ -9,7 +10,7 @@ A Flutter plugin for record the screen based on [HBRecorder](https://github.com/
 ## What's New in 0.0.4
 
 - **Fixed:** Removed deprecated `package` attribute from AndroidManifest.xml to support modern Android Gradle Plugin versions
-  - The `package="ru.kovardin.device_screen_recorder"` attribute is no longer used in the source AndroidManifest.xml
+  - The `package="ru.kovardin.device_screen_recorder_new"` attribute is no longer used in the source AndroidManifest.xml
   - This resolves build failures related to namespace configuration in newer Android projects
 
 ## Getting Started
